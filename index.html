@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Home Spotify</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+
+        .nav-item{
+            padding-left: 1em;
+        }
+
+        .menuSelecionar{
+            text-decoration: none;
+            
+            color: black;
+        }
+        .menuSelecionar:hover{
+            text-decoration: none;
+            color: #1DB954;
+            border-bottom: #1DB954 solid 3px ;
+        }
+
+    </style>  
+    
+    <script src="jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+  <body>
+      
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+
+        <a class="navbar-brand mb-2" href="#"><img src="img/Spotify-logo.png" height="40" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+            <ul class="nav">
+
+                <li class="nav-item">
+                    <a class="menuSelecionar" href="#">Premiun</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menuSelecionar" href="#">Ajuda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menuSelecionar" href="#">Baixar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menuSelecionar" href="#">|</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menuSelecionar" href="#">Inscrever-me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menuSelecionar" href="#">Entrar</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+        <div id="corpo">
+            <h1 class="h1 text-center mt-3 font-weight-bold">Música para todos.</h1>
+            <h2 class="h6 text-center">Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.</h2>
+            
+            <div class="d-flex justify-content-center">
+                <a href=""><img src="img/fundo.svg" height="400px" alt="" id="fundo"></a>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="container border-top mt-5">
+                <div class="row mt-3">
+    
+                    <div class=" col-sm-12 col-lg-2">
+                        <div>
+                            <img src="img/Spotify-logo.png" height="40px" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="list-unstyled">
+                            <li class="font-weight-bold">EMPRESA</li>
+                            <li>Sobre</li>
+                            <li>Empregos</li>
+                            <li>For the Record</li>   
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="list-unstyled">
+                            <li class="font-weight-bold">COMUNIDADES</li>
+                            <li>Para Artistas</li>
+                            <li>Desenvolvedores</li>
+                            <li>Marcas</li>
+                            <li>Investidores</li>
+                            <li>Fornecedores</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="list-unstyled">
+                            <li class="font-weight-bold">LINKS ÚTEIS</li>
+                            <li>Ajuda</li>
+                            <li>Player da Web</li>
+                            <li>Aplicativo móvel grátis</li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-lg-1">
+                        <img src="img/instagram.svg" height="40px" alt="" class="mt-3">
+                        <img src="img/twitter.svg" height="40px" alt="" class="mt-3">
+                        <img src="img/facebook.svg" height="40px" alt="" class="mt-3">
+                    </div>
+    
+                </div>
+            </div>
+        </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script>
+
+        const corpo = $("#fundo");
+
+        $(function(){
+
+            const tamanhoJanela = ($(window).height());//informa a altura do janela
+
+            corpo.fadeIn('slow',3000);
+
+        });
+
+    </script>
+
+</body>
+</html>
